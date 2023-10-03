@@ -36,7 +36,7 @@ async def gcast(event):
         msg = reply.text
     else:
         return await eod(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await eor(event, "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Saya...`")
+    kk = await eor(event, "`Sedang Mengirim gcast Mohon Bersabar... Kalo Limit Jangan Salahin Baron..`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -54,7 +54,7 @@ async def gcast(event):
                 except BaseException:
                     er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** {done} **Grup Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {er} **Grup.**"
+        f"**Berhasil Mengirim Gcast Ke** {done} **Grup Tod.**\n**Yahhh Gagal Mengirim Gcast Ke** {er} **Grup.**"
     )
 
 
