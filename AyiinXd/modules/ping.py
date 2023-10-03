@@ -52,10 +52,10 @@ async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     Ayiin = await edit_or_reply(ping, "**✧**")
-    await Ayiin.edit("**✧✧**")
-    await Ayiin.edit("**✧✧✧**")
-    await Ayiin.edit("**✧✧✧✧**")
-    await Ayiin.edit("**✧✧✧✧✧**")
+    await Ayiin.edit("**✧1✧**")
+    await Ayiin.edit("**✧2✧**")
+    await Ayiin.edit("**✧3✧**")
+    await Ayiin.edit("**✧dor😎✧**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
@@ -198,7 +198,7 @@ async def _(pong):
     await xx.edit("Sepong Sayang.....")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await xx.edit("🥵")
+    await xx.edit("🥵😈")
     sleep(3)
     await xx.edit("**𝙿𝙸𝙽𝙶!**\n`%sms`" % (duration))
 
